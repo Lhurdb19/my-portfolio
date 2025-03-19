@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  padding: 0%;
+  box-sizing: border-box;
+  text-decoration: none;
+  background-color: #051208;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url(/src/Assets/static/Montserrat-Light.ttf);
+}
+@font-face {
+  font-family: Strike;
+  src: url(/src/Assets/Protest_Strike/ProtestStrike-Regular.ttf);
+}
+
+
+.project-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  gap: 40px;
+  padding: 20px 100px;
+}
+
+.project-container > a {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.card-info {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card-info > img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.card-info > p {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  font-size: 20px;
+  font-family: Strike;
+  color: #0b2311;
+  background-color: #ebc9a0;
+}

@@ -1,0 +1,93 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url(/src/Assets/static/Montserrat-Light.ttf);
+}
+@font-face {
+  font-family: Strike;
+  src: url(/src/Assets/Protest_Strike/ProtestStrike-Regular.ttf);
+}
+
+nav {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 100px;
+  background-color: #222222;
+  gap: 40px;
+  position: fixed;
+  z-index: 100;
+}
+
+nav > a {
+  color: #ddb686;
+  font-size: 30px;
+  font-family: Strike;
+  background-color: transparent;
+}
+
+.nav-link {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+  background-color: transparent;
+}
+.nav-link > a {
+  color: #ddb686;
+  font-size: 15px;
+  font-family: Montserrat;
+  background-color: transparent;
+}
+
+.toggle-menu {
+  display: none;
+}
+  
+@media screen and (max-width:896px) {
+  nav {
+    width: 100%;
+    display: flex;
+    padding: 10px;
+  }
+
+  nav > a {
+    font-size: 25px;
+  }
+
+  .nav-link {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    left: 0;
+    top: 61px;
+    transform: translateY(-110%);
+    padding: 10px;
+    position: absolute;
+    z-index: 0;
+    transition: all 0.3s ease-in-out;
+    background-color: #222222;
+  }
+
+  .nav-link.mobile.active {
+    transform: translateY(0%);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .toggle-menu {
+    display: flex;
+    font-size: 30px;
+    color: #ddb686;
+  }
+}

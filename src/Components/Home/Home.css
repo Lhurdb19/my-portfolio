@@ -1,0 +1,423 @@
+* {
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+  }
+  
+  @font-face {
+    font-family: Montserrat;
+    src: url(/src/Assets/static/Montserrat-Light.ttf);
+  }
+  @font-face {
+    font-family: Strike;
+    src: url(/src/Assets/Protest_Strike/ProtestStrike-Regular.ttf);
+  }
+
+  @font-face {
+    font-family: Montbold;
+    src: url(/src/Assets/static/Montserrat-Bold.ttf);
+  }
+  
+  .home-component {
+    width: 100%;
+    flex-direction: column;
+    padding: 10px 100px;
+    gap: 40px;
+    border-right: 300px solid transparent;
+    border-left: 300px solid transparent;
+    border-bottom: 100px solid #ebc9a0;
+    border-top: 140px solid #ebc9a0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    position: relative;
+    gap: 20px;
+    margin-bottom: 50px;
+  }
+  
+  .myself-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .my-image-text {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .my-image {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .my-image > img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    position: relative;
+  }
+  
+  .my-image > h5 {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(0,0,0,0.4);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    transform: translateY(-100%) rotateY(0deg);
+    transition: all 0.3s ease-in-out;
+    color: #ebc9a0;
+    font-family: Strike;
+  }
+  
+  .my-image:hover > h5 {
+    transform: translateY(0) rotateY(360deg);
+  }
+  
+  .my-image-text > .my-text {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+    color: #bab8b8;
+    font-size: 18px;
+    font-family: Montserrat;
+  }
+  
+  .my-text > h3 {
+    color: #ebc9a0;
+    font-size: 40px;
+    line-height: 4rem;
+    font-family: Strike;
+  }
+  
+  .my-text > a {
+    width: 220px;
+    color: #ebc9a0;
+    background-color: transparent;
+    border: 1px solid #ebc9a0;
+    padding: 8px 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 50px;
+    font-family: Montserrat;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.4s ease-in-out;
+  }
+  
+  .my-text > a:hover {
+    background-color: #ebc9a0;
+    color: #0b2311;
+    transition: all 0.4s ease-in-out;
+  }
+  .my-text > a > h3 {
+    font-size: 17px;
+    color: #ebc9a0;
+  }
+  
+  .icon1, .icon2 {
+    position: absolute;
+    font-size: 20px;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    right: 5px;
+  }
+  
+  .icon1 {
+    width: 30px;
+    height: 30px;
+    transform: translateY(0);
+    color: #0b2311;
+    background-color: white;
+    border-radius: 50%;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+  }
+  
+  .icon2 {
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(100%);
+    color: #0b2311;
+    background-color: white;
+    border-radius: 50%;
+    opacity: 0;
+  }
+  
+  .my-text > a:hover .icon1 {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  
+  .my-text > a:hover .icon2 {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  
+  
+  .my-cv  {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    margin-left: 100px;
+    background-image: url('https://res.cloudinary.com/damamkuye/image/upload/v1742315837/IMG_2733_k7kwy8.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    perspective: 500px;
+  }
+  
+  .my-cv-text {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 23, 0.6);
+    color: white;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+    transform-style: preserve-3d;
+    position: absolute;
+    overflow: hidden;
+    transition: all 0.4s ease-in-out;
+  }
+  
+  .my-cv:hover > .my-cv-text {
+    display: flex;
+    transition: all 0.5s ease-in-out;
+    animation: move3d;
+    animation-timing-function: 0.3s;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;animation-direction: alternate;
+  }
+  
+  @keyframes move3d {
+    0% { transform: translate3d(0px, 0px, 10px); transition: all 0.5s ease-in-out; }
+    50% { transform: translate3d(50px, 50px, 0px); transition: all 0.5s ease-in-out;}
+    100% { transform: translate3d(10px, 0px, 100px); transition: all 0.5s ease-in-out;}
+  }
+
+  .my-cv-text > h6 {
+    color: #ebc9a0;
+    font-size: 30px;
+    font-family: Montserrat;
+  }
+
+.home-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 100px;
+}
+
+.laptop-con {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.laptop-con > img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.lap-desk-text {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px;
+    color: #ebc9a0;
+    font-family: Montserrat;
+}
+
+.lap-desk-text > .top {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+.lap-desk-text > .top > .icons {
+    font-size: 50px;
+}
+
+.about-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 50px;
+    padding: 50px 100px;
+}
+
+.about-image {
+    width: 45%;
+    height: 700px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    background-color: #ebc9a0;
+    padding: 30px;
+}
+
+.about-image > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-text {
+    width: 55%;
+    height: 700px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    background-color: #ebc9a0;
+    padding: 30px;
+    gap: 30px;
+}
+
+.about-text > h2 {
+    font-size: 30px;
+    font-family: Strike;
+    color: #0b2311;
+}
+
+.about-text > p {
+    font-size: 18px;
+    font-family: Montserrat;
+    line-height: 2.5rem;
+}
+
+.my-design {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 40px;
+    padding-top: 80px;
+}
+
+.my-design > h3 {
+    font-size: 20px;
+    font-family: Strike;
+}
+.my-design > h4 {
+    font-size: 20px;
+    font-family: Montbold;
+}
+
+.resume-link-con {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.download-btn {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #0b2311;
+    background-color: transparent;
+    color: #0b2311;
+    padding: 6px 5px 6px 15px;
+    font-size: 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+    overflow: hidden;
+  }
+
+  .down-icon {
+    width: 35px;
+    height: 35px;
+    padding: 5px;
+    border-radius: 50%;
+    color: #bab8b8;
+    display: flex;
+  }
+  
+  .download-btn:hover {
+    background-color: #0b2311;
+    color: #ddb686;
+  }
+
+  .download-btn:hover > .down-icon {
+    animation: drop 0.7s infinite;
+  }
+
+  @keyframes drop {
+    0% {
+        transform: translateY(-100%); transition: all 0.3s ease-in-out;
+    }
+    100% {
+        transform: translateY(100%); transition: all 0.3s ease-in-out;
+    }
+  }
+  
+  .my-link {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .my-link > a {
+    padding: 10px;
+    border-radius: 50%;
+    border: 1px solid #6b6a6a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    scale: 1.0;
+    transition: all 0.3s ease-in-out;
+  }
+  .my-link > a:hover {
+    border: 1px solid black;
+    scale: 1.1;
+    transition: all 0.3s ease-in-out;
+  }
