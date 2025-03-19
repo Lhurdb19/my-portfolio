@@ -5,9 +5,10 @@ import { IoIosLaptop } from "react-icons/io";
 import { RiUserStarLine } from "react-icons/ri";
 import { FaXTwitter, FaInstagram, FaFacebookF, FaWhatsapp, FaLinkedinIn, FaGithub } from "react-icons/fa6";
 import { FcDownload } from "react-icons/fc";
-import { SiCreatereactapp } from "react-icons/si";
-import "./Home.css";
 import ProjectCard from "../Projects/project";
+import Experience from "../Experiences/experience";
+import "./Home.css";
+import Getintouch from "../Contact/getintouch";
 
 function Home() {
   const handleDownload = () => {
@@ -39,7 +40,7 @@ function Home() {
               <h3>
                 Innovative solutions for forward-thinking brands and projects
               </h3>
-              <a href="/">
+              <a href="/experience">
                 <p>Explore My Works</p>
                 <FiArrowUpRight className="icon1" />{" "}
                 <FiArrowUpRight className="icon2" />
@@ -129,13 +130,13 @@ function Home() {
       </div>
 
       <div className="creation-container">
-        <h3><SiCreatereactapp /><p> CREATIONS</p> </h3>
-        <h2>My Selected Works</h2>
 
         <div className="selected-work-con">
             <ProjectCard/>
         </div>
+        <Experience/>
       </div>
+      {/* <Getintouch/> */}
     </>
   );
 }

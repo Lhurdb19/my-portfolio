@@ -1,7 +1,9 @@
-import fetchProjectFile from '../../Libs/projectFile'
+import ProjectFile from '../../Libs/projectFile'
 import React from "react";
+import { SiCreatereactapp } from "react-icons/si";
 
 const ProjectCard = () => {
+  
   // return(
   //     <div className="project-container">
   //         {
@@ -22,26 +24,32 @@ const ProjectCard = () => {
   // )
 
   return (
+  <>
+    <div className="my-selection">
+      <h3><SiCreatereactapp className='create-icon'/><p> CREATIONS</p> </h3>
+      <h2>My Selected Works</h2>
     <div className="project-container">
-      {fetchProjectFile.map((project) => (
+      {ProjectFile.map((project) => (
         <a
-          key={project.id}
-          href={getLink(project.id)}
+        key={project.id}
+        href={getLink(project.id)}
           className="project-info"
           target="_blank"
           rel="noreferrer"
-        >
+          >
           <div className="card-info">
             <img src={project.imageUrl} alt="" />
             <p>{project.title}</p>
           </div>
         </a>
       ))}
+      </div>
     </div>
+    </>
   );
 
   function getLink(id) {
-    switch (id) {
+    switch (String(id)) {  // Ensure id is treated as a string
       case "1":
         return "https://supermarket-ebon.vercel.app/";
       case "2":
@@ -54,12 +62,15 @@ const ProjectCard = () => {
         return "https://honeymeal.vercel.app/";
       case "6":
         return "https://sweetbundle.vercel.app/";
-        case "7":
-          return "https://browleeboutique-l6bs.vercel.app/";
+      case "7":
+        return "https://browleeboutique-l6bs.vercel.app/";
+      case "8":
+        return "https://olymaxsolution.vercel.app/";
       default:
         return "/";
     }
   }
+  
 };
 
 export default ProjectCard;
