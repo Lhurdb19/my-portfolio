@@ -17,13 +17,6 @@ function Home() {
   return (
     <>
       <div className="home-component">
-            {/* <div className="my-image">
-              <img
-                src="https://res.cloudinary.com/damamkuye/image/upload/v1742315837/IMG_2733_k7kwy8.jpg"
-                alt="EJIWUMI BASHEER"
-              />
-              <h5>HEJIDEV</h5>
-            </div> */}
             <div className="about-mycv">
               <div className="cv-words">
                 <div className="cv-text">
@@ -38,14 +31,14 @@ function Home() {
                   <FiArrowUpRight className="icons2" />
                 </a>
                 </div>
+                {/* <img src="https://res.cloudinary.com/damamkuye/image/upload/v1742503220/cv_tpfcie.jpg" alt="" /> */}
                 <img src="https://res.cloudinary.com/damamkuye/image/upload/v1742315837/IMG_2733_k7kwy8.jpg" alt="" />
               </div>
-              
             </div>
         </div>
 
-      <section className="home-container">
-        {/* Image Gallery with AOS */}
+      {/* <section className="home-container">
+       
         <div className="laptop-con">
           <img
             src="https://res.cloudinary.com/damamkuye/image/upload/v1742339788/mockup4_cuqrri.jpg"
@@ -69,7 +62,6 @@ function Home() {
           />
         </div>
 
-        {/* Developer Information */}
         <div className="lap-desk-text">
           <div className="top" data-aos="fade-up">
             <SlScreenDesktop className="icons" />
@@ -84,7 +76,7 @@ function Home() {
             <h3>77% Client Satisfaction</h3>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <div className="creation-container">
         <div className="selected-work-con">

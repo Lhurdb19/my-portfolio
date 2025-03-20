@@ -1,9 +1,8 @@
 body {
-    margin: 0;
-    padding: 0%;
+  padding: 0%;
+  margin: 0%;
     box-sizing: border-box;
     text-decoration: none;
-    background-color: #051208;
   }
   
   @font-face {
@@ -47,7 +46,7 @@ body {
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
-    background-color: #1d231f;
+    background-color: #0b2311;
     padding: 30px;
 }
 @media screen and (max-width:896px) {
@@ -58,7 +57,6 @@ body {
         justify-content: flex-start;
         align-items: flex-start;
         flex-direction: column;
-        background-color: #1d231f;
         padding: 20px;
     }
 }
@@ -77,7 +75,7 @@ body {
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
-    background-color: #1d231f;
+    background-color: #0b2311;
     padding: 30px;
     gap: 30px;
 }
@@ -109,7 +107,7 @@ body {
         justify-content: flex-start;
         align-items: flex-start;
         flex-direction: column;
-        background-color: #1d231f;
+        background-color: #0b2311;
         padding: 20px;
         gap: 10px;
     }

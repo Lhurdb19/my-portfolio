@@ -60,11 +60,11 @@ function App() {
           <Footer />
 
           {/* Scroll-to-Top Button */}
-          {showScrollBtn && (
+          {/* {showScrollBtn && (
             <button className="scroll-to-top" onClick={scrollToTop}>
               <FaArrowUp />
             </button>
-          )}
+          )} */}
         </Router>
       )}
 
@@ -95,11 +95,7 @@ function App() {
           transform: scale(1.1);
         }
         
-      `}, {`@media screen and (max-width:896px) {
-         .scroll-to-top {
-         display: none;
-         }
-      }`}
+      `}
       
       </style>
     </>
