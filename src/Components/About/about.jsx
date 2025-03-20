@@ -1,7 +1,23 @@
-import React from 'react'
+import React from 'react';
+import { FaXTwitter, FaInstagram, FaFacebookF, FaWhatsapp, FaLinkedinIn, FaGithub } from "react-icons/fa6";
+import { FcDownload } from "react-icons/fc";
+import './About.css';
+import Getintouch from '../Contact/getintouch';
 
 function About() {
+  const handleDownload = () => {
+      const link = document.createElement("a");
+      link.href =
+        "https://www.dropbox.com/scl/fi/z5akqnezotc27beig73cf/BASHEER_EJIWUMI_-MY-CV-2.pdf?rlkey=kj2sfo9indwmusld3jyeh6i13&st=s0o0keh2&dl=1";
+      link.download = "Basheer_Ejiwumi_CV.pdf";
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      
+    };
+
   return (
+    <>
     <div className="about-container">
         <div className="about-image">
           <img
@@ -40,6 +56,8 @@ function About() {
           </div>
         </div>
       </div>
+        <Getintouch/>
+      </>
   )
 }
 

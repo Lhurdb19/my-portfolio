@@ -17,9 +17,7 @@ function Footer() {
         <a href="https://x.com/hejidev" className="twit">
           Twitter
         </a>
-        <a href="" className="insta">
-          Instagram
-        </a>
+
         <a href="https://github.com/Lhurdb19" className="git">
           Github 
         </a>
@@ -28,6 +26,15 @@ function Footer() {
         <div className="lets-container">
             <a href="/">Portfolio</a>
           <h1>Let’s create something together</h1>
+        </div>
+
+        <div className="get-con">
+          <h5>Company</h5>
+          <span>
+          <a href="/about">About</a>
+          <a href="/contact">Contact</a>
+            <a href="/contact">Faqs</a>
+          </span>
         </div>
         <div className="link-container">
           <span>

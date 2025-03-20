@@ -10,6 +10,7 @@ import Contact from './Components/Contact/contact';
 import Footer from './Components/Footer/footer';
 import Experience from './Components/Experiences/experience';
 import Overlay from './Components/Overlay/overlay';
+import About from './Components/About/about';
 
 function App() {
   const [showWelcome, setShowWelcome] = useState(true);
@@ -49,6 +50,7 @@ function App() {
           <Navbar />
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path='/about' element={<About/>}/>
             <Route path="/project" element={<Projects />} />
             <Route path="/hero" element={<Hero />} />
             <Route path="/experience" element={<Experience />} />
@@ -70,10 +72,10 @@ function App() {
       <style jsx>{`
         .scroll-to-top {
           position: fixed;
-          bottom: 20px;
-          right: 20px;
-          width: 50px;
-          height: 50px;
+          bottom: 50px;
+          right: 50px;
+          width: 35px;
+          height: 35px;
           background: #ebc9a0;
           color: #0b2311;
           border: none;
@@ -81,7 +83,7 @@ function App() {
           display: flex;
           justify-content: center;
           align-items: center;
-          font-size: 20px;
+          font-size: 18px;
           cursor: pointer;
           transition: all 0.3s ease-in-out;
           box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
@@ -92,7 +94,14 @@ function App() {
           background: #d6a972;
           transform: scale(1.1);
         }
-      `}</style>
+        
+      `}, {`@media screen and (max-width:896px) {
+         .scroll-to-top {
+         display: none;
+         }
+      }`}
+      
+      </style>
     </>
   );
 }
