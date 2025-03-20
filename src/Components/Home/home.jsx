@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { FiArrowUpRight } from "react-icons/fi";
 import { SlScreenDesktop } from "react-icons/sl";
 import { IoIosLaptop } from "react-icons/io";
@@ -7,8 +7,9 @@ import { FaXTwitter, FaInstagram, FaFacebookF, FaWhatsapp, FaLinkedinIn, FaGithu
 import { FcDownload } from "react-icons/fc";
 import ProjectCard from "../Projects/project";
 import Experience from "../Experiences/experience";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import "./Home.css";
-import Getintouch from "../Contact/getintouch";
 
 function Home() {
   const handleDownload = () => {
@@ -21,6 +22,10 @@ function Home() {
     document.body.removeChild(link);
     
   };
+
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
 
   return (
     <>
@@ -56,82 +61,52 @@ function Home() {
         </div>
       </div>
 
-      <div className="home-container">
-        <div className="laptop-con">
-          <img
-            src="https://res.cloudinary.com/damamkuye/image/upload/v1742339788/mockup4_cuqrri.jpg"
-            alt=""
-          />
-          <img
-            src="https://res.cloudinary.com/damamkuye/image/upload/v1742339787/mockup3_s32eqi.webp"
-            alt=""
-          />
-          <img
-            src="https://res.cloudinary.com/damamkuye/image/upload/v1742339787/mockup5_iju4av.jpg"
-            alt=""
-          />
-          <img
-            src="https://res.cloudinary.com/damamkuye/image/upload/v1742339787/morkup1_ewbazo.webp"
-            alt=""
-          />
-        </div>
-        <div className="lap-desk-text">
-          <div className="top">
-            <SlScreenDesktop className="icons" />{" "}
-            <h3>Front-End Developer @hejiDev</h3>
-          </div>
-          <div className="top">
-            <IoIosLaptop className="icons" /> <h3>One Year Of Experience</h3>
-          </div>
-          <div className="top">
-            <RiUserStarLine className="icons" />{" "}
-            <h3>77% Client Satisfaction</h3>
-          </div>
-        </div>
+      <section className="home-container">
+      {/* Image Gallery with AOS */}
+      <div className="laptop-con">
+        <img
+          src="https://res.cloudinary.com/damamkuye/image/upload/v1742339788/mockup4_cuqrri.jpg"
+          alt="Project Mockup"
+          data-aos="fade-right"
+        />
+        <img
+          src="https://res.cloudinary.com/damamkuye/image/upload/v1742339787/mockup3_s32eqi.webp"
+          alt="Project Mockup"
+          data-aos="fade-up"
+        />
+        <img
+          src="https://res.cloudinary.com/damamkuye/image/upload/v1742339787/mockup5_iju4av.jpg"
+          alt="Project Mockup"
+          data-aos="fade-down"
+        />
+        <img
+          src="https://res.cloudinary.com/damamkuye/image/upload/v1742339787/morkup1_ewbazo.webp"
+          alt="Project Mockup"
+          data-aos="fade-left"
+        />
       </div>
 
-      <div className="about-container">
-        <div className="about-image">
-          <img
-            src="https://res.cloudinary.com/damamkuye/image/upload/v1742315837/IMG_2733_k7kwy8.jpg"
-            alt=""
-          />
+      {/* Developer Information */}
+      <div className="lap-desk-text">
+        <div className="top" data-aos="fade-up">
+          <SlScreenDesktop className="icons" />
+          <h3>Front-End Developer @hejiDev</h3>
         </div>
-        <div className="about-text">
-          <h2>ABOUT ME</h2>
-          <p>
-            I’m a Front-End Developer with a passion for turning ideas into
-            interactive, user-friendly experiences. With a year of experience, I
-            specialize in designing and developing intuitive interfaces that
-            strike the perfect balance between aesthetics and functionality.
-            Every project I build is driven by a deep focus on usability,
-            innovation, and performance, ensuring that users don’t just navigate
-            but truly connect with the digital world.
-          </p>
-          <div className="my-design">
-            <h3>My Essential Principles of Design & Development</h3>
-            <h4>HTML / CSS / JavaScript / React / Github / Postman / Firebase</h4>
-          </div>
-
-          <div className="resume-link-con">
-          <button onClick={handleDownload} className="download-btn">
-            <p>Download Resume</p> <FcDownload className="down-icon"/>
-          </button>
-          <div className="my-link">
-            <a href="https://web.facebook.com/hejidev/"  style={{color: 'blue'}}><FaFacebookF /></a>
-            <a href="https://x.com/hejidev" style={{color: 'black'}}><FaXTwitter /></a>
-            <a href="wa.me/2348130693571"  style={{color: 'green'}}><FaWhatsapp /></a>
-            <a href=""  style={{color: 'black'}}><FaLinkedinIn /></a>
-            <a href="/"  style={{color: 'red'}}><FaInstagram /></a>
-            <a href="https://github.com/Lhurdb19"  style={{color: 'black'}}><FaGithub /></a>
-          </div>
-          </div>
+        <div className="top" data-aos="fade-up" data-aos-delay="200">
+          <IoIosLaptop className="icons" />
+          <h3>One Year Of Experience</h3>
+        </div>
+        <div className="top" data-aos="fade-up" data-aos-delay="400">
+          <RiUserStarLine className="icons" />
+          <h3>77% Client Satisfaction</h3>
         </div>
       </div>
+    </section>
 
       <div className="creation-container">
 
         <div className="selected-work-con">
+        {/* <Hero/> */}
             <ProjectCard/>
         </div>
         <Experience/>

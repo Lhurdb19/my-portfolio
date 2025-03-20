@@ -5,23 +5,23 @@ function Footer() {
   return (
     <div className="footer-container">
       <span className="footer-link">
-        <a href="" className="face">
+        <a href="https://web.facebook.com/hejidev/" className="face">
           Facebook
         </a>
         <a href="" className="linked">
           Linkedin
         </a>
-        <a href="" className="git">
-          Github 
+        <a href="wa.me/2348130693571" className="what">
+          Whatsapp
         </a>
-        <a href="" className="twit">
+        <a href="https://x.com/hejidev" className="twit">
           Twitter
         </a>
         <a href="" className="insta">
           Instagram
         </a>
-        <a href="" className="what">
-          Whatsapp
+        <a href="https://github.com/Lhurdb19" className="git">
+          Github 
         </a>
       </span>
       <div className="footer-wrapper">

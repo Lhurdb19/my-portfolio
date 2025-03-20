@@ -61,10 +61,10 @@ function Contact() {
       <div className="contact-wrapper">
         <h2>Contact me and Let's build something incredible</h2>
         <span className="contact-link">
-          <a href="" className="face">Facebook</a>
-          <a href="" className="twit">Twitter</a>
+          <a href="https://web.facebook.com/hejidev/" className="face">Facebook</a>
+          <a href="https://x.com/hejidev" className="twit">Twitter</a>
           <a href="" className="insta">Instagram</a>
-          <a href="" className="what">Whatsapp</a>
+          <a href="wa.me/2348130693571" className="what">Whatsapp</a>
         </span>
       </div>
 

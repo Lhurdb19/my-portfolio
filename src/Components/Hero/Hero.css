@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0%;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url(/src/Assets/static/Montserrat-Light.ttf);
+}
+@font-face {
+  font-family: Strike;
+  src: url(/src/Assets/Protest_Strike/ProtestStrike-Regular.ttf);
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    background-image: url('https://d17422uxibeifn.cloudfront.net/wordpress/wp-content/uploads/2021/07/23144435/lenovo-legion-brand-feature-12-bkgd_Hero.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    /* background: linear-gradient(135deg, #0f172a, #1e293b); */
+    color: #fff;
+    padding: 100px;
+  }
+  
+  .hero-content {
+    max-width: 800px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    background: linear-gradient(90deg, #ebc9a0, #e52e71);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .hero-content > h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+
+  }
+  
+  .hero-content > p {
+    font-size: 1.5rem;
+    opacity: 0.8;
+    margin-bottom: 20px;
+    line-height: 2rem;
+    color: #ebc9a0;
+  }
+  
+  .hero-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+  }
+  
+  .btn-primary,
+  .btn-secondary {
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .btn-primary {
+    background-color: #0b2311;
+    color: #ebc9a0;
+  }
+  
+  .btn-secondary {
+    background-color: #ebc9a0;
+    color: #0b2311;
+}
+
+.btn-primary:hover {
+    background-color: #ebc9a0;
+    color: #0b2311;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #0b2311;
+    color: #ebc9a0;
+    border: none;
+  }
+  

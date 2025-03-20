@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+    background-color: #051208;
+  }
+  
+  @font-face {
+    font-family: Montserrat;
+    src: url(/src/Assets/static/Montserrat-Light.ttf);
+  }
+  @font-face {
+    font-family: Strike;
+    src: url(/src/Assets/Protest_Strike/ProtestStrike-Regular.ttf);
+  }
+
+  .welcome-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #ebc9a0;
+    font-family: Montserrat, sans-serif;
+    z-index: 9999;
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .welcome-screen.fade-out {
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  .welcome-text {
+    font-size: 40px;
+    font-weight: bold;
+    animation: fadeInUp 1.5s ease-in-out;
+  }
+  
+  .sub-text {
+    font-size: 18px;
+    margin-top: 10px;
+    opacity: 0.8;
+    animation: fadeInUp 2s ease-in-out;
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  

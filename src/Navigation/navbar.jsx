@@ -12,7 +12,6 @@ const Navbar = () => {
       <Link to={'/'}>Portfolio</Link>
 
       <div className={`nav-link ${isMobile ? 'mobile active' : ""}`} onClick={ () => setIsMobile(!isMobile)}>
-        <Link to="/" onClick={()=> setIsMobile(false)}>Home</Link>
         <Link to="/project" onClick={()=> setIsMobile(false)}>Project</Link>
         <Link to="/hero" onClick={()=> setIsMobile(false)}>Hero</Link>
       </div>

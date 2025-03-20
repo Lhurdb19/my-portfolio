@@ -81,7 +81,6 @@ body {
 
 .my-selection > h3 {
   display: flex;
-  justify-content: flex-start;
   align-items: center;
   gap: 10px;
   color: #ebc9a0;
@@ -94,6 +93,7 @@ body {
   font-size: 15px;
   font-family: Montbold;
 }
+
 .my-selection > h2 {
   color: #ebc9a0;
   font-size: 30px;
@@ -105,46 +105,63 @@ body {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  align-items: center;
   gap: 40px;
 }
 
 .project-container > a {
-  width: 100%;
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
+  text-decoration: none;
+  transition: transform 0.3s ease-in-out;
+}
+
+.project-container > a:hover {
+  transform: scale(1.05);
 }
 
 .card-info {
   width: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.skeleton-box {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  border-radius: 10px;
 }
 
 .card-info > img {
   width: 100%;
   height: 250px;
   object-fit: cover;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card-info:hover img {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 
 .card-info > p {
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
   padding: 20px;
   font-size: 15px;
   font-family: Strike;
   color: #0b2311;
   background-color: #ebc9a0;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+  border-radius: 10px;
+  margin-top: 10px;
+  transition: background-color 0.3s ease-in-out;
 }
+
+.card-info:hover p {
+  background-color: #d6a972;
+}
+
 
 
 /* EXPERIENCE CONTAINER  */
