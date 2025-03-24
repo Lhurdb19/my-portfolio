@@ -16,7 +16,7 @@ const Experience = () => {
         "Created a sports event & player search tool using TheSportsDB API.",
         "Optimized UI/UX across projects using Tailwind CSS, Framer Motion, and Figma.",
       ],
-      icon: <FaReact className="exp-icon" style={{color: 'blue'}}/>,
+      icon: <FaReact className="exp-icon" style={{color: 'white'}}/>,
     },
     {
       role: "Freelance Front-End Developer",
@@ -27,7 +27,7 @@ const Experience = () => {
         "Enhanced SEO and reduced website load times by 30% through optimization.",
         "Integrated Firebase authentication and real-time database for secure login.",
       ],
-      icon: <FaCode className="exp-icon" style={{color: 'purple'}}/>,
+      icon: <FaCode className="exp-icon" style={{color: 'white'}}/>,
     },
     {
       role: "Open Source & Hackathons",
@@ -37,7 +37,7 @@ const Experience = () => {
         "Contributed to open-source projects, improving UI consistency and fixing bugs.",
         "Participated in frontend-focused hackathons, building React-based projects in 48 hours.",
       ],
-      icon: <FaGithub className="exp-icon" style={{color: 'black'}} />,
+      icon: <FaGithub className="exp-icon" style={{color: 'white'}} />,
     },
   ];
 
@@ -72,11 +72,11 @@ const Experience = () => {
         ))}
       </div>
       <div className="exp-image">
-        <img src="https://img.freepik.com/premium-photo/laptop-with-programming-code-software-development-concept-futuristic-technology-cyber-space_375605-414.jpg" alt="" />
+        <img src="https://res.cloudinary.com/damamkuye/image/upload/v1742339787/mockup5_iju4av.jpg" alt="" />
       </div>
         </div>
     </section>
-        <Getintouch/>
+        {/* <Getintouch/> */}
         </>
   );
 };

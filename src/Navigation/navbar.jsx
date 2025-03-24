@@ -9,11 +9,11 @@ const Navbar = () => {
 
   return (
     <nav>
-      <Link to={'/'}>Portfolio</Link>
+      <Link to={'/'}>HEJIDEV</Link>
 
       <div className={`nav-link ${isMobile ? 'mobile active' : ""}`} onClick={ () => setIsMobile(!isMobile)}>
+        <Link to="/about" onClick={()=> setIsMobile(false)}>About</Link>
         <Link to="/project" onClick={()=> setIsMobile(false)}>Project</Link>
-        <Link to="/hero" onClick={()=> setIsMobile(false)}>Hero</Link>
       </div>
       <div className="toggle-menu" onClick={() => setIsMobile(!isMobile)}>{isMobile ? <HiMiniXMark /> : <RxDropdownMenu />}</div>
     </nav>

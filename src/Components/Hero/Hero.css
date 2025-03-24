@@ -20,41 +20,53 @@
     justify-content: center;
     height: 100vh;
     text-align: center;
-    background-image: url('https://d17422uxibeifn.cloudfront.net/wordpress/wp-content/uploads/2021/07/23144435/lenovo-legion-brand-feature-12-bkgd_Hero.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    /* background: linear-gradient(135deg, #0f172a, #1e293b); */
-    color: #fff;
-    padding: 100px;
+    color: #0b2311;
+    position: relative;
   }
 
   @media screen and (max-width:896px) {
     .hero {
       width: 100%;
-      height: 100vh;
+      height: fit-content;
       display: flex;
-      color: #fff;
-      padding: 150px 0px;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 60px 0px 0 0;
+      background-color: antiquewhite;
+      z-index: -10;
     }
   }
   
   .hero-content {
-    max-width: 800px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     flex-direction: column;
-    gap: 50px;
+    gap: 30px;
+  }
+
+  .hero-content > h3 {
+    font-size: 17px;
+    font-weight: 600;
+    font-family: Montserrat;
+    color: #0b2311;
   }
 
   @media screen and (max-width:896px) {
     .hero-content {
       width: 100%;
       display: flex;
-      justify-content: center;
+      top: 280px;
+      justify-content: flex-end;
       flex-direction: column;
-      gap: 50px;
+      gap: 0px;
+      position: absolute;
+    }
+
+    .hero-content > h3 {
+      font-size: 15px;
+      font-weight: 600;
+      font-family: Strike;
+      color: #0b2311;
     }
   }
   
@@ -62,7 +74,7 @@
     font-size: 2.5rem;
     font-weight: bold;
     margin-bottom: 10px;
-    background: linear-gradient(90deg, #ebc9a0, #e52e71);
+    background: linear-gradient(90deg, #0b2311, #e52e71);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: Montserrat;
@@ -79,16 +91,16 @@
     opacity: 0.8;
     margin-bottom: 20px;
     line-height: 2rem;
-    color: #ebc9a0;
+    color: #0b2311;
     font-family: Montserrat;
   }
 
   @media screen and (max-width:896px) {
     .hero-content > h1 {
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       font-weight: bold;
       margin-bottom: 10px;
-      background: linear-gradient(90deg, #ebc9a0, #e52e71);
+      background: linear-gradient(90deg, #0b2311, #e52e71);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
@@ -96,14 +108,14 @@
     .hero-content > h2 {
       width: 100%;
       height: 70px;
-      /* display: flex; */
       justify-content: center;
       align-items: center;
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       margin-bottom: 0px;
     }
     
     .hero-content > p {
+      display: none;
       font-size: 1.2rem;
       opacity: 0.8;
       margin-bottom: 20px;
@@ -157,3 +169,29 @@
     border: none;
   }
   
+  .hero-image {
+    width: 100%;
+    display: flex;
+  }
+  
+  .hero-image > img {
+    z-index: -10;
+    width: 100%;
+    height: 800px;
+    object-fit: cover;
+  }
+
+  @media screen and (max-width:896px) {
+    .hero-image {
+      width: 100%;
+      display: flex;
+      position: relative;
+    }
+
+    .hero-image > img {
+      z-index: -10;
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+    }
+  }

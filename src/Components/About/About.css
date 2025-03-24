@@ -21,11 +21,6 @@ body {
     align-items: flex-start;
     gap: 50px;
     padding: 100px;
-    background-image: url('https://res.cloudinary.com/damamkuye/image/upload/v1742494950/photo-1639322537231-2f206e06af84_w2gobw.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
 }
 @media screen and (max-width:896px) {
     .about-container {
@@ -35,7 +30,7 @@ body {
         align-items: flex-start;
         flex-direction: column;
         gap: 20px;
-        padding: 100px 10px;
+        padding: 40px 10px;
     }
 }
 
@@ -47,7 +42,7 @@ body {
     align-items: flex-start;
     flex-direction: column;
     background-color: #0b2311;
-    padding: 30px;
+    padding: 0px;
 }
 @media screen and (max-width:896px) {
     .about-image {
@@ -57,7 +52,7 @@ body {
         justify-content: flex-start;
         align-items: flex-start;
         flex-direction: column;
-        padding: 20px;
+        padding: 0px;
     }
 }
 
@@ -75,8 +70,7 @@ body {
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
-    background-color: #0b2311;
-    padding: 30px;
+    padding: 0px;
     gap: 30px;
 }
 
@@ -90,7 +84,7 @@ body {
     font-size: 16px;
     font-family: Montserrat;
     line-height: 2.5rem;
-    color: #fff;
+    color: #ebc9a0;
 }
 @media screen and (max-width:896px) {
     .about-image > img {
@@ -109,7 +103,7 @@ body {
         flex-direction: column;
         background-color: #0b2311;
         padding: 20px;
-        gap: 10px;
+        gap: 20px;
     }
     
     .about-text > h2 {
@@ -121,7 +115,6 @@ body {
         font-size: 12px;
         font-family: Montserrat;
         line-height: 1.5rem;
-        color: #fff;
     }
 }
 
@@ -135,44 +128,125 @@ body {
 }
 
 .my-design > h3 {
-    font-size: 20px;
-    color: #ebc9a0;
-    font-family: Montbold;
-}
-.my-design > h4 {
-    font-size: 15px;
-    color: #7c7b7b;
-    font-family: Montserrat;
+  font-size: 25px;
+  color: #ebc9a0;
+  font-family: Montbold;
 }
 
 @media screen and (max-width:896px) {
-    .my-design {
-        width: 100%;
-        display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
-        flex-direction: column;
-        gap: 10px;
-    }
-    
-    .my-design > h3 {
-        font-size: 12px;
-        color: #ebc9a0;
-        font-family: Montbold;
-    }
-    .my-design > h4 {
-        font-size: 10px;
-        color: #7c7b7b;
-        font-family: Montserrat;
-    }
+   .my-design {
+    width: 100%;
+    gap: 10px;
+  }
+   .my-design > h3 {
+    font-size: 20px;
+    color: #ebc9a0;
+    font-family: Montbold;
+  }
+}
+
+.stack-box {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+@media screen and (max-width:896px) {
+  .stack-box {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+.stack-box > span {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #ebc9a0;
+  padding: 20px;
+  gap: 20px;
+  color: #0b2311;
+  font-size: 17px;
+  font-family: Montserrat;
+  font-weight: 600;
+}
+
+@media screen and (max-width:896px) {
+   .stack-box > span {
+    width: 200px;
+    height: 200px;
+   }
+}
+
+.html-percent {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: bold;
+  padding-left: 30px;
+  color: #fff;
+  background: conic-gradient(#0b2311 95%, #ebc9a0 0%);
+}
+.css-percent {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: bold;
+  padding-left: 30px;
+  color: #fff;
+  background: conic-gradient(#0b2311 89%, #ebc9a0 0%);
+}
+.java-percent {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: bold;
+  padding-left: 30px;
+  color: #fff;
+  background: conic-gradient(#0b2311 77%, #ebc9a0 0%);
+}
+.react-percent {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: bold;
+  padding-left: 30px;
+  color: #fff;
+  background: conic-gradient(#0b2311 65%, #ebc9a0 0%);
 }
 
 .resume-link-con {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     padding-top: 50px;
+    gap: 50px;
 }
 
 .download-btn {
@@ -261,6 +335,7 @@ body {
     align-items: center;
     font-size: 15px;
     scale: 1.0;
+    color: #ebc9a0;
     transition: all 0.3s ease-in-out;
   }
   .my-link > a:hover {

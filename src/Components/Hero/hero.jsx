@@ -7,6 +7,7 @@ const Hero = () => {
   return (
     <section className="hero">
       <div className="hero-content">
+        <h3>I am Basheer Ejiwumi</h3>
         {/* Animated Heading */}
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
@@ -42,7 +43,7 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1.5, duration: 1 }}
         >
-          Building **sleek, user-friendly, and scalable** digital products.  
+          Building sleek, user-friendly, and scalable digital products.  
           Let's collaborate and turn your ideas into seamless experiences.
         </motion.p>
 
@@ -60,6 +61,9 @@ const Hero = () => {
             Let's Collaborate
           </a>
         </motion.div>
+      </div>
+      <div className="hero-image">
+      <img src="https://res.cloudinary.com/damamkuye/image/upload/v1742807958/IMG_2733_k7kwy8-removebg-preview_buqrdz.png" alt="" />
       </div>
     </section>
   );

@@ -24,7 +24,7 @@ function Footer() {
       </span>
       <div className="footer-wrapper">
         <div className="lets-container">
-            <a href="/">Portfolio</a>
+            <a href="/">HEJIDEV</a>
           <h1>Let’s create something together</h1>
         </div>
 

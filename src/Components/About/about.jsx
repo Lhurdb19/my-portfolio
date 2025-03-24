@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaXTwitter, FaInstagram, FaFacebookF, FaWhatsapp, FaLinkedinIn, FaGithub } from "react-icons/fa6";
-import { FcDownload } from "react-icons/fc";
+import { LiaDownloadSolid } from "react-icons/lia";
 import './About.css';
 import Getintouch from '../Contact/getintouch';
 
@@ -26,7 +26,7 @@ function About() {
           />
         </div>
         <div className="about-text">
-          <h2>ABOUT ME</h2>
+          <h2>About Me</h2>
           <p>
             I’m a Front-End Developer with a passion for turning ideas into
             interactive, user-friendly experiences. With a year of experience, I
@@ -37,21 +37,38 @@ function About() {
             but truly connect with the digital world.
           </p>
           <div className="my-design">
-            <h3>My Essential Principles of Design & Development</h3>
-            <h4>HTML / CSS / JavaScript / React / Github / Postman / Firebase</h4>
+            <h3>My Stacks</h3>
+            <div className="stack-box">
+              <span>HTML
+                <div className="html-percent">
+                  95%
+                </div>
+              </span>
+              <span>CSS
+              <div className="css-percent">89%</div>
+              </span>
+              <span>JavaScript
+              <div className="java-percent">77%</div>
+
+              </span>
+              <span>React
+              <div className="react-percent">65%</div>
+              </span>
+            </div>
+            {/* <h4>HTML / CSS / JavaScript / React / Github </h4> */}
           </div>
 
           <div className="resume-link-con">
           <button onClick={handleDownload} className="download-btn">
-            <p>Download Resume</p> <FcDownload className="down-icon"/>
+            <p>Download Resume</p> <LiaDownloadSolid className="down-icon" style={{color: 'ebc9a0'}}/>
           </button>
           <div className="my-link">
-            <a href="https://web.facebook.com/hejidev/"  style={{color: 'blue'}}><FaFacebookF /></a>
-            <a href="https://x.com/hejidev" style={{color: 'black'}}><FaXTwitter /></a>
-            <a href="wa.me/2348130693571"  style={{color: 'green'}}><FaWhatsapp /></a>
-            <a href=""  style={{color: 'black'}}><FaLinkedinIn /></a>
-            <a href="/"  style={{color: 'red'}}><FaInstagram /></a>
-            <a href="https://github.com/Lhurdb19"  style={{color: 'black'}}><FaGithub /></a>
+            <a href="https://web.facebook.com/hejidev/" ><FaFacebookF /></a>
+            <a href="https://x.com/hejidev" ><FaXTwitter /></a>
+            <a href="wa.me/2348130693571" ><FaWhatsapp /></a>
+            <a href="" ><FaLinkedinIn /></a>
+            <a href="/" ><FaInstagram /></a>
+            <a href="https://github.com/Lhurdb19" ><FaGithub /></a>
           </div>
           </div>
         </div>

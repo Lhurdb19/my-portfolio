@@ -21,14 +21,15 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 20px 100px;
-  background-color: #0b2311;
+  background-color: #fff;
   gap: 40px;
   position: fixed;
   z-index: 100;
+  border-bottom: 1px solid #0b2311;
 }
 
 nav > a {
-  color: #ddb686;
+  color: #0b2311;
   font-size: 30px;
   font-family: Strike;
   background-color: transparent;
@@ -42,7 +43,7 @@ nav > a {
   background-color: transparent;
 }
 .nav-link > a {
-  color: #ddb686;
+  color: #0b2311;
   font-size: 15px;
   font-family: Montserrat;
   background-color: transparent;
@@ -77,7 +78,7 @@ nav > a {
     position: fixed;
     z-index: 100;
     transition: all 0.3s ease-in-out;
-    background-color: #051208;
+    background-color: #ffff;
   }
 
   .nav-link.mobile.active {
@@ -88,6 +89,6 @@ nav > a {
   .toggle-menu {
     display: flex;
     font-size: 30px;
-    color: #ddb686;
+    color: #0b2311;
   }
 }

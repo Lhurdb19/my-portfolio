@@ -15,7 +15,7 @@ const WelcomeScreen = ({ onComplete }) => {
 
   return (
     <div className={`welcome-screen ${fadeOut ? "fade-out" : ""}`}>
-      <h1 className="welcome-text">Welcome to HEJIDEV Portfolio</h1>
+      <h1 className="welcome-text">HEJIDEV Portfolio</h1>
       <p className="sub-text">Innovative Solutions for Forward-thinking Brands</p>
     </div>
   );

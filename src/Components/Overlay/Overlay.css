@@ -16,18 +16,19 @@
 
 .overlay-container {
     position: fixed;
-    top: 80%;
-    left: 45%;
+    top: 50%;
+    left: 0.5%;
     transform: translateY(-10%);
-    width: 200px;
-    height: 60px;
-    background: rgba(0, 0, 0, 0.5);
+    width: 20px;
+    height: 200px;
+    background: rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(6px);
     border-radius: 15px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    padding: 10px;
+    flex-direction: column;
+    padding: 20px;
     z-index: 1000;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   }
@@ -46,7 +47,7 @@
     background: transparent;
     border: none;
     color: #ebc9a0;
-    font-size: 20px;
+    font-size: 17px;
     cursor: pointer;
     transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
   }

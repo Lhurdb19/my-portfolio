@@ -3,7 +3,7 @@ body {
   margin: 0%;
   box-sizing: border-box;
   text-decoration: none;
-  background-color: #051208;
+  background-color: #fbfbfb;
 }
 
 @font-face {
@@ -23,7 +23,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 50px 100px;
+  padding: 0px 100px;
   gap: 30px;
 }
 
@@ -48,12 +48,13 @@ body {
 .getintouch-container > h4 {
   font-size: 25px;
   font-family: Montbold;
-  color: #bab8b8;
+  color: #ebc9a0;
 }
 
 .getintouch-container > h1 {
   font-size: 60px;
   font-family: Montbold;
+  font-weight: 600;
   color: #ebc9a0;
 }
 
@@ -272,12 +273,6 @@ body {
   align-items: flex-start;
   flex-direction: column;
   padding: 100px;
-  /* background-color: #1d231f; */
-  background-image: url('https://res.cloudinary.com/damamkuye/image/upload/v1742495092/dev-to-uploads_gawqve.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
 }
 
 @media screen and (max-width:896px) {
@@ -1192,13 +1187,19 @@ select > option:hover {
 }
 
 .lets-container > a {
-  color: #ddb686;
+  color: #ebc9a0;
+  background: linear-gradient(90deg, #ebc9a0, #fff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-size: 30px;
   font-family: Strike;
   background-color: transparent;
 }
 .lets-container > h1 {
-  color: #bab8b8;
+  color: #ebc9a0;
+  /* background: linear-gradient(90deg, #ebc9a0, #e52e71); */
+  /* -webkit-background-clip: text; */
+  /* -webkit-text-fill-color: transparent; */
   font-size: 20px;
   font-family: Strike;
   background-color: transparent;

@@ -32,10 +32,6 @@ body {
     z-index: 9999;
     opacity: 1;
     transition: opacity 1s ease-in-out;
-    background-image: url('https://res.cloudinary.com/damamkuye/image/upload/v1742495372/welcome_b0htan.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
   }
 
   @media screen and (max-width:896px) {
@@ -59,6 +55,9 @@ body {
     font-weight: bold;
     animation: fadeInUp 1.5s ease-in-out;
     font-family: Montserrat;
+    background: linear-gradient(90deg, #ebc9a0, #e52e71);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
   @media screen and (max-width:896px) {

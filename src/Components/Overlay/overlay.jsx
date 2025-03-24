@@ -1,6 +1,6 @@
 import React from "react";
 import { FaHome, FaUser, FaBriefcase, FaArrowUp } from "react-icons/fa";
-import { MdConnectWithoutContact } from "react-icons/md";
+import { MdContactPage } from "react-icons/md";
 import "./Overlay.css";
 
 const Overlay = () => {
@@ -19,7 +19,7 @@ const Overlay = () => {
       
       <a href="/experience"className="overlay-icon"><FaBriefcase /></a>
       
-      <a href="/contact" className="overlay-icon"><MdConnectWithoutContact /></a>
+      <a href="/contact" className="overlay-icon"><MdContactPage /></a>
       
       <button onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })} className="overlay-icon">
         <FaArrowUp />
