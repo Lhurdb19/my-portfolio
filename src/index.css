@@ -228,7 +228,7 @@ body {
 @media screen and (max-width:896px) {
   .card-info > img {
     width: 100%;
-    height: fit-content;
+    height: 300px;
     object-fit: cover;
     border-radius: 10px;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
@@ -374,19 +374,15 @@ body {
   .experience-wrap {
     width: 100%;
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-direction: column;
     gap: 10px;
-    padding: 0px 0;
+    padding: 10px 0;
   }
   
   .experience-box {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    gap: 5px;
+    gap: 3px;
   }
   
   .exp-icon {
@@ -416,20 +412,18 @@ body {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    text-align: center;
-    flex-direction: column;
-    gap: 5px;
+    gap: 3px;
     color: #fff;
     font-family: Montserrat;
   }
   
   .exp-heading > h3 {
-    font-size: 10px;
+    font-size: 9px;
     border-right: none;
     padding-right: 0px;
   }
   .exp-heading > p {
-    font-size: 10px;
+    font-size: 9px;
   }
 }
 
@@ -454,9 +448,10 @@ body {
     width: 100%;
     display: flex;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
+    line-height: 1.4rem;
     gap: 5px;
-    font-size: 10px;
+    font-size: 12px;
   }
 }
 
@@ -972,7 +967,7 @@ select > option:hover {
   display: flex;
   align-items: center;
   gap: 10px;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 600;
   cursor: pointer;
   color: #ebc9a0;
@@ -983,9 +978,9 @@ select > option:hover {
     display: flex;
     align-items: center;
     gap: 10px;
-    font-size: 15px;
+    font-size: 10px;
     font-weight: 500;
-    line-height: 1.5rem;
+    line-height: 1.4rem;
   }
 }
 
@@ -1009,7 +1004,7 @@ select > option:hover {
 
 .faq-answer {
   margin-top: 10px;
-  font-size: 15px;
+  font-size: 14px;
   color: #bab8b8;
   padding-left: 32px;
   line-height: 1.5;

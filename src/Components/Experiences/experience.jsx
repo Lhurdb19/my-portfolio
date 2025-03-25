@@ -56,7 +56,7 @@ const Experience = () => {
             <div className="experience-box">
               {exp.icon}
               <div className="exp-heading">
-                <h3 >{exp.role}</h3> 
+                <h3 >{exp.role}- </h3> 
                 <p >{exp.company} • {exp.duration}</p>
               </div>
             </div>
