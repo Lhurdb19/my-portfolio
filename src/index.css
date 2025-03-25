@@ -1159,10 +1159,10 @@ select > option:hover {
 .footer-wrapper {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: flex-start;
   box-shadow: 0px 0px 1px 0px #7c7b7b;
-  padding: 50px 100px;
+  padding: 100px;
 }
 
 @media screen and (max-width:896px) {
@@ -1178,7 +1178,7 @@ select > option:hover {
 }
 
 .lets-container {
-  width: 100%;
+  width: 35%;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
@@ -1188,20 +1188,14 @@ select > option:hover {
 
 .lets-container > a {
   color: #ebc9a0;
-  background: linear-gradient(90deg, #ebc9a0, #fff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   font-size: 30px;
   font-family: Strike;
   background-color: transparent;
 }
 .lets-container > h1 {
   color: #ebc9a0;
-  /* background: linear-gradient(90deg, #ebc9a0, #e52e71); */
-  /* -webkit-background-clip: text; */
-  /* -webkit-text-fill-color: transparent; */
   font-size: 20px;
-  font-family: Strike;
+  font-family: Montbold;
   background-color: transparent;
 }
 
@@ -1228,19 +1222,35 @@ select > option:hover {
   }
 }
 
-.get-con {
-  width: 100%;
+.get-con { 
+  width: 65%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 50px;
+}
+
+@media screen and (max-width:896px) {
+   .get-con {
+    width: 100%;
+    flex-direction: column;
+   }
+}
+
+.get-con > span {
+  width: 30%;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column;
   gap: 10px;
 }
-.get-con > h5 {
+
+.get-con > span > h5 {
   font-size: 15px;
   color: #ebc9a0;
 }
-.get-con > span {
+.get-con > span  > span {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
@@ -1249,22 +1259,22 @@ select > option:hover {
   font-size: 15px;
   color: #ddb686;
 }
-.get-con > span > a {
+.get-con > span > span > a {
   color: #7c7b7b;
   transition: all 0.3s ease-in-out;
 }
 
-.get-con > span > a:hover {
+.get-con > span > span > a:hover {
   color: #fff;
   padding-left: 5px;
   transition: all 0.3s ease-in-out;
 }
 
 .link-container {
-  width: 100%;
+  width: 70%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .link-container > span {

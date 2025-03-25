@@ -63,7 +63,10 @@ const Hero = () => {
         </motion.div>
       </div>
       <div className="hero-image">
-      <img src="https://res.cloudinary.com/damamkuye/image/upload/v1742807958/IMG_2733_k7kwy8-removebg-preview_buqrdz.png" alt="" />
+      <img
+            src="https://res.cloudinary.com/damamkuye/image/upload/v1742315837/IMG_2733_k7kwy8.jpg"
+            alt=""
+          />
       </div>
     </section>
   );

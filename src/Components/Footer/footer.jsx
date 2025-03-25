@@ -29,13 +29,25 @@ function Footer() {
         </div>
 
         <div className="get-con">
-          <h5>Company</h5>
+          <span>
+          <h5>Link</h5>
           <span>
           <a href="/about">About</a>
+          <a href="/project">Projects</a>
+          <a href="/experience">Experience</a>
           <a href="/contact">Contact</a>
             <a href="/contact">Faqs</a>
           </span>
-        </div>
+          </span>
+
+        <span>
+          <h5>Services</h5>
+          <span>
+          <a href="/">Web Design</a>
+          <a href="/">Web Development</a>
+          <a href="/experience">Web3 Solutions</a>
+          </span>
+        </span>
         <div className="link-container">
           <span>
             <h5>Email:</h5>
@@ -49,6 +61,7 @@ function Footer() {
           </span>
         </div>
       </div>
+        </div>
       <footer className="footer">
       <p>© {currentYear} HejiDev. All rights reserved.</p>
     </footer>
