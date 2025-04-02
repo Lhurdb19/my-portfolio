@@ -38,7 +38,12 @@ const projectFile = [
         id: 8,
         imageUrl: 'https://res.cloudinary.com/damamkuye/image/upload/v1742309527/WhatsApp_Image_2025-03-18_at_15.41.28_qnse5t.jpg',
         title: 'DEMO',
-    }
+    },
+    {
+        id: 9n,
+        imageUrl: 'https://res.cloudinary.com/damamkuye/image/upload/v1743414292/IMG_2873_eztlvn.jpg',
+        title: 'DEMO',
+    },
 ]
 
 export default projectFile;
