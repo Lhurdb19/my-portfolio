@@ -75,6 +75,8 @@ function getLink(id) {
       return "https://olymaxsolution.vercel.app/";
     case "9":
       return "https://oakberry-real-estate.vercel.app/";
+    case "10":
+      return "https://peace-cottage.vercel.app/";
     default:
       return "/";
   }

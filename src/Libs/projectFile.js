@@ -40,8 +40,13 @@ const projectFile = [
         title: 'DEMO',
     },
     {
-        id: 9n,
+        id: 9,
         imageUrl: 'https://res.cloudinary.com/damamkuye/image/upload/v1743414292/IMG_2873_eztlvn.jpg',
+        title: 'DEMO',
+    },
+    {
+        id: 10,
+        imageUrl: 'https://res.cloudinary.com/damamkuye/image/upload/v1744714646/IMG_3031_vab0a1.jpg',
         title: 'DEMO',
     },
 ]
