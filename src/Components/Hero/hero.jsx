@@ -17,7 +17,6 @@ const Hero = () => {
           Crafting Digital Experiences with Precision & Creativity
         </motion.h1>
 
-        {/* Dynamic Typing Effect */}
         <motion.h2
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -64,8 +63,9 @@ const Hero = () => {
       </div>
       <div className="hero-image">
       <img
-            src="https://res.cloudinary.com/damamkuye/image/upload/v1742315837/IMG_2733_k7kwy8.jpg"
+            src="https://res.cloudinary.com/damamkuye/image/upload/v1750744755/smiling-Photoroom_no2dry.png"
             alt=""
+            loading="lazy"
           />
       </div>
     </section>

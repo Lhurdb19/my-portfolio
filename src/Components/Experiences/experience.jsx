@@ -15,6 +15,7 @@ const Experience = () => {
         "Designed and implemented a decentralized NFT dashboard with MetaMask integration.",
         "Created a sports event & player search tool using TheSportsDB API.",
         "Optimized UI/UX across projects using Tailwind CSS, Framer Motion, and Figma.",
+        "Developed CryptoTracker, a responsive cryptocurrency tracking web app using React and the CoinGecko API to fetch and display real-time market data. Integrated a 7-day interactive price chart using Chart.js, dynamically rendered on coin selection for better user insight."
       ],
       icon: <FaReact className="exp-icon" style={{color: 'white'}}/>,
     },

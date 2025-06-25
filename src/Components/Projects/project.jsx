@@ -70,12 +70,14 @@ function getLink(id) {
     case "6":
       return "https://sweetbundle.vercel.app/";
     case "7":
-      return "https://browleeboutique-l6bs.vercel.app/";
+      return "https://cryptoupdate-chi.vercel.app/";
     case "8":
-      return "https://olymaxsolution.vercel.app/";
+      return "https://browleeboutique-l6bs.vercel.app/";
     case "9":
-      return "https://oakberry-real-estate.vercel.app/";
+      return "https://olymaxsolution.vercel.app/";
     case "10":
+      return "https://oakberry-real-estate.vercel.app/";
+    case "11":
       return "https://peace-cottage.vercel.app/";
     default:
       return "/";

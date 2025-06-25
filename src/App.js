@@ -74,8 +74,8 @@ function App() {
           position: fixed;
           bottom: 50px;
           right: 50px;
-          width: 35px;
-          height: 35px;
+          width: 30px;
+          height: 30px;
           background: #ebc9a0;
           color: #0b2311;
           border: none;

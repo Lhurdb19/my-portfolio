@@ -21,7 +21,7 @@ function About() {
     <div className="about-container">
         <div className="about-image">
           <img
-            src="https://res.cloudinary.com/damamkuye/image/upload/v1742315837/IMG_2733_k7kwy8.jpg"
+            src="https://res.cloudinary.com/damamkuye/image/upload/v1750745187/handshake-Photoroom_vlhwdo.png"
             alt=""
           />
         </div>
@@ -52,7 +52,7 @@ function About() {
 
               </span>
               <span>React
-              <div className="react-percent">65%</div>
+              <div className="react-percent">85%</div>
               </span>
             </div>
             {/* <h4>HTML / CSS / JavaScript / React / Github </h4> */}

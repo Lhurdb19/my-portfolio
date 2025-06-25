@@ -11,7 +11,6 @@ import "./Home.css";
 import About from "../About/about";
 import Contact from "../Contact/contact";
 import Hero from "../Hero/hero";
-import PortfolioLanding from "./portfoliolanding";
 
 function Home() {
   useEffect(() => {

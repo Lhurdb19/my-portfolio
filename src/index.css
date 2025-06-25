@@ -429,10 +429,13 @@ body {
 
 .exp-workdone {
   list-style: none;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
 }
 
 .exp-workdone > li {
-  width: 100%;
+  width: 90%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -442,6 +445,9 @@ body {
 
 .exp-workdone > li > p {
   color: #ebc9a0;
+  font-family: Montserrat;
+  line-height: 1.4;
+  font-size: 14px;
 }
 @media screen and (max-width:896px) {
   .exp-workdone > li {
